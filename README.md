@@ -14,9 +14,10 @@ Here I saved the program in C drive you can change your path where you saved it.
 
 &nbsp;			C:\Users\anilg\Downloads\Distributed_Assignment1\distributed_Assignment1\src\main\java
 
+&nbsp;       javac *.java    //This command will compile all java Files prseent in that path
+
 &nbsp;				java -cp . calculator.CalculatorServer  //RMI registry will get started
 
-&nbsp;
 
 
 Step 2: Now The server is ready Open new  terminal Window and run the client.
@@ -29,14 +30,13 @@ Here client can perform the actions also
 
 Step 3: now we need to test the code we have writen whether it is working as intended or not.
 
-	Before that we need to come to our root directory because maven needs to read POM.XML file.
 
-&nbsp;	C:\Users\anilg\Downloads\Distributed_Assignment1\distributed_Assignment1
+&nbsp;	C:\Users\anilg\Downloads\Distributed_Assignment1\distributed_Assignment1\src\main\java
 then give this command to test the code it gives us the test cases whether passed or failed
 
-&nbsp;		**mvn test**	
+&nbsp;		java -cp . calculator.CalculatorTest.java // for single Client Calculator Test	
 
-&nbsp;
+&nbsp;    java -cp . calculator.MultiClientTest  // for multi Client Calculator Test
 
 We can see the Test cases have passed for our Test Programs.
 
