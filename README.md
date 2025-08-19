@@ -9,39 +9,30 @@ Steps to compile:
 
 	Since it is a Maven Project we need java 17 or later
 
-Step 1: Copy the root directory and change the command to our root in power shell.
+Step 1: Copy the root directory and change the command to our root in power shell and rum the server program to start the rmi registry
+Here I saved the program in C drive you can change your path where you saved it.
 
-&nbsp;			cd E:\\distributed\_Assignment1
+&nbsp;			C:\Users\anilg\Downloads\Distributed_Assignment1\distributed_Assignment1\src\main\java
 
-&nbsp;				**mvn clean compile**
+&nbsp;				java -cp . calculator.CalculatorServer  //RMI registry will get started
 
 &nbsp;
 
-Step 2: Now copy the directory path where our class flies are saved and we will start the RMI Registry.
 
-&nbsp;			cd E:\\distributed\_Assignment1\\src\\main\\java
-
-&nbsp;	**javac (Get-ChildItem -Path calculator -Filter \*.java | ForEach-Object { $\_.FullName })**
-
-&nbsp;	**java -cp . calculator.CalculatorServer**
-
-
-
-Step 3: Now The server is ready Open new Window and run the client.
+Step 2: Now The server is ready Open new  terminal Window and run the client.
 
 &nbsp;	**java -cp . calculator.CalculatorClient**
 
-&nbsp;
-
-
+&nbsp; // Make sure to open it in new terminal or window. 
 
 Here client can perform the actions also
 
-Step 4: now we need to test the code we have writen whether it is working as intended or not.
+Step 3: now we need to test the code we have writen whether it is working as intended or not.
 
 	Before that we need to come to our root directory because maven needs to read POM.XML file.
 
-&nbsp;	E:\\distributed\_Assignment1
+&nbsp;	C:\Users\anilg\Downloads\Distributed_Assignment1\distributed_Assignment1
+then give this command to test the code it gives us the test cases whether passed or failed
 
 &nbsp;		**mvn test**	
 
