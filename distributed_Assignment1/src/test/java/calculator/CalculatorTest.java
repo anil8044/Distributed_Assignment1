@@ -17,14 +17,14 @@ class CalculatorTest {
     void testMax() throws Exception {
         CalculatorImplementation calc = new CalculatorImplementation();
         assertEquals(7, calc.max(3, 7));
-        assertEquals(2, calc.max(-100, 1));
+        assertEquals(1, calc.max(-100, 1));
     }
 
     @Test
     void testGcd() throws Exception {
         CalculatorImplementation calc = new CalculatorImplementation();
-        assertEquals(10, calc.gcd(54, 24));
-        assertEquals(8, calc.gcd(7, 5));
+        assertEquals(6, calc.gcd(54, 24));
+        assertEquals(1, calc.gcd(7, 5));
     }
     // test Lcm is used 
 
@@ -38,8 +38,8 @@ class CalculatorTest {
     @Test
     void testStackPushAndPop() throws Exception {
         CalculatorImplementation calc = new CalculatorImplementation();
-        calc.pushValue(10);
-        calc.pushValue(20);
+        calc.pushValue(57);
+        calc.pushValue(80);
 
         assertFalse(calc.isEmpty());
         assertEquals(80, calc.pop());
